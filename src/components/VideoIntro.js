@@ -65,9 +65,9 @@ const VideoIntro = () => {
           className="text-center mt-12 max-w-3xl mx-auto"
         >
           <p className="text-lg text-gray-600">
-            "I'm passionate about helping professionals leverage LinkedIn to its full potential. 
-            Through strategic personal branding and proven lead generation techniques, I've helped 
-            thousands of individuals and companies transform their LinkedIn presence."
+            {'"'}I{"'"}m passionate about helping professionals leverage LinkedIn to its full potential. 
+            Through strategic personal branding and proven lead generation techniques, I{"'"}ve helped 
+            thousands of individuals and companies transform their LinkedIn presence.{'"'}
           </p>
           <p className="text-primary font-bold mt-4">- Bhavana Govil</p>
         </motion.div>

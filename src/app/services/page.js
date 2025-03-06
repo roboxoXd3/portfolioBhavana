@@ -27,71 +27,41 @@ export default function Services() {
         </div>
       </section>
       
-      {/* Service 1: LinkedIn Profile Makeover */}
-      <section id="profile-makeover" className="py-20 bg-white">
+      {/* Service 1: LinkedIn Profile Optimization */}
+      <section id="profile-optimization" className="py-16 border-b border-gray-200">
         <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8">LinkedIn Profile Optimization</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="text-primary mb-4">
-                <FaUserTie size={48} />
-              </div>
-              <h2 className="text-3xl font-bold text-dark mb-6">LinkedIn Profile Makeover</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Transform your LinkedIn profile into a lead-generating machine with professional optimization that showcases your expertise and attracts your ideal clients.
+              <p className="text-lg mb-6">
+                Your LinkedIn profile is often the first impression potential clients or employers have of you. 
+                I{"'"}ll help you transform it into a powerful personal branding tool that attracts your ideal 
+                audience and opportunities.
               </p>
-              
-              <h3 className="text-xl font-semibold mb-4">What's Included:</h3>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <FaCheck className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Strategic headline optimization to improve searchability</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheck className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Compelling about section that showcases your unique value proposition</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheck className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Experience section optimization highlighting your achievements</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheck className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Strategic keyword placement for improved visibility</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheck className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Profile banner design recommendations</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheck className="text-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Professional photo guidance</span>
-                </li>
+              <p className="text-lg mb-6">
+                My profile optimization service includes:
+              </p>
+              <ul className="list-disc pl-6 mb-8 space-y-2">
+                <li>Strategic headline and about section that clearly communicates your value proposition</li>
+                <li>Keyword optimization to ensure you{"'"}re found in searches</li>
+                <li>Custom banner image design that reinforces your brand</li>
+                <li>Experience section that highlights achievements and results</li>
+                <li>Recommendations on skills, endorsements, and recommendations</li>
+                <li>Profile photo assessment and suggestions</li>
               </ul>
-              
-              <Link 
-                href="https://calendly.com/your-calendly-link" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors"
-              >
-                <FaCalendar className="mr-2" />
-                <span>Book a Profile Makeover</span>
-              </Link>
+              <p className="text-lg font-semibold">
+                Result: A professional, polished LinkedIn profile that attracts your ideal audience and positions 
+                you as an authority in your field.
+              </p>
             </div>
-            
-            <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
-              {/* Replace with actual image */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 z-10"></div>
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-200 z-0">
-                <p className="text-gray-500">LinkedIn Profile Makeover Image</p>
-              </div>
-              {/* Uncomment and use when you have the actual image */}
-              {/* <Image
-                src="/images/profile-makeover.jpg"
-                alt="LinkedIn Profile Makeover"
-                fill
-                style={{ objectFit: 'cover' }}
-              /> */}
+            <div className="bg-gray-100 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Client Success Story</h3>
+              <p className="italic mb-6">
+                {'"'}After Bhavana optimized my LinkedIn profile, I started receiving inbound inquiries from 
+                potential clients within days. My profile views increased by 300% and I{"'"}ve secured three 
+                new clients directly from LinkedIn in just one month.{'"'}
+              </p>
+              <p className="font-semibold">- David Chen, Financial Advisor</p>
             </div>
           </div>
         </div>

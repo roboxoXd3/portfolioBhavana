@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -8,32 +8,25 @@ import { useInView } from 'react-intersection-observer';
 const testimonials = [
   {
     id: 1,
-    name: 'John Smith',
-    position: 'CEO, Tech Innovations',
-    quote: 'Working with Bhavana transformed my LinkedIn presence completely. My engagement increased by 300% and I started getting quality leads within weeks!',
-    image: '/placeholder-avatar.png',
+    content: `Working with Bhavana transformed my LinkedIn presence completely. I've generated over 20 quality leads in just two months after implementing her strategies.`,
+    name: "Sarah Johnson",
+    title: "Marketing Director",
+    image: "/images/testimonial1.jpg"
   },
   {
     id: 2,
-    name: 'Sarah Johnson',
-    position: 'Career Coach',
-    quote: 'Bhavana\'s strategies helped me grow my coaching business exponentially. Her content calendar approach made posting consistently so much easier.',
-    image: '/placeholder-avatar.png',
+    content: `Bhavana's LinkedIn training for our sales team resulted in a 40% increase in connection acceptance rates and significantly more conversations with potential clients.`,
+    name: "Michael Chen",
+    title: "Sales Manager, TechGrowth Inc.",
+    image: "/images/testimonial2.jpg"
   },
   {
     id: 3,
-    name: 'Michael Chen',
-    position: 'Marketing Director',
-    quote: 'The LinkedIn training Bhavana provided to our team was exceptional. Our sales team is now leveraging LinkedIn effectively for prospecting.',
-    image: '/placeholder-avatar.png',
-  },
-  {
-    id: 4,
-    name: 'Priya Sharma',
-    position: 'Business Consultant',
-    quote: 'I was skeptical about LinkedIn as a lead generation tool until I worked with Bhavana. Now it\'s my primary source of high-quality clients!',
-    image: '/placeholder-avatar.png',
-  },
+    content: `I was skeptical about LinkedIn's potential for my consulting business until I worked with Bhavana. Her content strategy helped me position myself as a thought leader in my industry.`,
+    name: "Priya Sharma",
+    title: "Business Consultant",
+    image: "/images/testimonial3.jpg"
+  }
 ];
 
 const clientLogos = [
@@ -118,18 +111,17 @@ const Testimonials = () => {
                 <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
                   <p className="text-gray-500 text-xs">Photo</p>
                 </div>
-                {/* Uncomment when you have actual images */}
-                {/* <Image
+                <Image
                   src={testimonials[currentTestimonial].image}
                   alt={testimonials[currentTestimonial].name}
                   fill
-                  style={{ objectFit: 'cover' }}
-                /> */}
+                  className="object-cover"
+                />
               </div>
               <div>
-                <div className="text-2xl text-gray-600 italic mb-6">"{testimonials[currentTestimonial].quote}"</div>
+                <div className="text-2xl text-gray-600 italic mb-6">"{testimonials[currentTestimonial].content}"</div>
                 <div className="font-bold text-dark">{testimonials[currentTestimonial].name}</div>
-                <div className="text-gray-600">{testimonials[currentTestimonial].position}</div>
+                <div className="text-gray-600">{testimonials[currentTestimonial].title}</div>
               </div>
             </div>
 

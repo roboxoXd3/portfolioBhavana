@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -8,70 +9,68 @@ import { FaUserTie, FaChartLine, FaUsers, FaCalendarAlt, FaMicrophone } from 're
 const services = [
   {
     id: 1,
-    title: 'LinkedIn Profile Makeover',
-    description: 'Transform your LinkedIn profile into a lead-generating machine with professional optimization.',
-    icon: <FaUserTie size={40} />,
-    link: '/services#profile-makeover',
+    title: "LinkedIn Profile Optimization",
+    description: "Transform your LinkedIn profile into a powerful personal branding tool that attracts your ideal clients and opportunities. I'll help you craft a compelling story that showcases your expertise and unique value proposition.",
+    icon: <FaUserTie className="text-4xl" />,
+    link: "/services#profile-optimization"
   },
   {
     id: 2,
-    title: 'Lead Generation Strategies',
-    description: 'Implement proven outreach and engagement strategies to attract high-quality leads.',
-    icon: <FaChartLine size={40} />,
-    link: '/services#lead-generation',
+    title: "Content Strategy & Creation",
+    description: "Develop a strategic content plan that positions you as a thought leader in your industry. I'll help you create engaging posts that resonate with your target audience and drive meaningful engagement.",
+    icon: <FaChartLine className="text-4xl" />,
+    link: "/services#content-strategy"
   },
   {
     id: 3,
-    title: '1:1 LinkedIn Training & Consulting',
-    description: 'Personalized coaching to help you master LinkedIn for your specific business goals.',
-    icon: <FaUsers size={40} />,
-    link: '/services#training',
+    title: "Lead Generation",
+    description: "Implement proven strategies to attract and convert high-quality leads through LinkedIn. I'll show you how to leverage the platform's features to build relationships that translate into business opportunities.",
+    icon: <FaUsers className="text-4xl" />,
+    link: "/services#lead-generation"
   },
   {
     id: 4,
-    title: 'Content Strategy & Calendar Creation',
-    description: 'Develop a strategic content plan that resonates with your audience and drives engagement.',
-    icon: <FaCalendarAlt size={40} />,
-    link: '/services#content-strategy',
+    title: "LinkedIn Training & Workshops",
+    description: "Custom training sessions for individuals and teams to master LinkedIn for business growth. Learn the latest strategies and best practices to maximize your results on the platform.",
+    icon: <FaCalendarAlt className="text-4xl" />,
+    link: "/services#training"
   },
   {
     id: 5,
-    title: 'Keynote Speaking & Corporate Training',
-    description: 'Engaging workshops and presentations on LinkedIn growth and personal branding.',
-    icon: <FaMicrophone size={40} />,
-    link: '/services#speaking',
-  },
+    title: "Speaking Engagements",
+    description: "Engaging presentations on LinkedIn strategy, personal branding, and social selling for conferences, corporate events, and industry gatherings.",
+    icon: <FaMicrophone className="text-4xl" />,
+    link: "/services#speaking"
+  }
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 }
+  }
+};
+
 const Services = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1
   });
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
-    <section className="py-20 bg-light" ref={ref}>
+    <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,13 +78,14 @@ const Services = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">What You'll Learn from Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive LinkedIn strategies to help you build your personal brand and generate quality leads.
+            Strategic solutions to elevate your LinkedIn presence and generate quality leads
           </p>
         </motion.div>
 
         <motion.div
+          ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -134,4 +134,4 @@ const Services = () => {
   );
 };
 
-export default Services; 
+export default Services;

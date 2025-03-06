@@ -117,8 +117,8 @@ export default function About() {
               <p>
                 After spending years in corporate marketing, I noticed that many talented professionals 
                 were struggling to showcase their expertise effectively on LinkedIn. Their profiles 
-                weren't optimized, their content strategy was inconsistent, and they weren't leveraging 
-                the platform's networking capabilities.
+                weren{"'"}t optimized, their content strategy was inconsistent, and they weren{"'"}t leveraging 
+                the platform{"'"}s networking capabilities.
               </p>
               <p>
                 This realization led me to develop a comprehensive approach to LinkedIn growth that 
@@ -255,7 +255,7 @@ export default function About() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-dark mb-8">The Brand Bhava Concept</h2>
             <p className="text-xl text-gray-600 mb-12">
-              "Bhava" means "emotion" or "feeling" in Sanskrit. Brand Bhava is about creating an emotional 
+              {'"'}Bhava{'"'} means {'"'}emotion{'"'} or {'"'}feeling{'"'} in Sanskrit. Brand Bhava is about creating an emotional 
               connection with your audience through authentic personal branding.
             </p>
             

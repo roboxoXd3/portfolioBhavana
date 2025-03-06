@@ -17,10 +17,10 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-light">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">Get in Touch</h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Have questions about how I can help you grow on LinkedIn? Let's connect!
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Let{"'"}s Connect</h1>
+            <p className="text-xl text-gray-600">
+              Ready to transform your LinkedIn presence and generate quality leads? I{"'"}m here to help you achieve your goals.
             </p>
           </div>
         </div>
