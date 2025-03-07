@@ -1,85 +1,66 @@
-'use client';
-
 import Image from 'next/image';
-import { FaWhatsapp, FaCalendarAlt } from 'react-icons/fa';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-linkedinBg">
-      <div className="container mx-auto px-4 py-20 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-linkedinText leading-tight mb-4">
+    <section className="pt-20 pb-16 bg-light">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Text content */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">
               Capture More Opportunities on LinkedIn with Proven Branding & Growth Strategies!
             </h1>
-            <h2 className="text-lg md:text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Helping Coaches, Consultants, and Professionals Build Their Personal Brand & Generate Leads on LinkedIn.
-            </h2>
+            </p>
             
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a 
-                href="https://wa.me/your-whatsapp-number" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center bg-white border border-primary text-primary px-5 py-2.5 rounded-full hover:bg-linkedinHover transition-colors font-medium"
-              >
-                <FaWhatsapp className="mr-2" />
+            {/* CTA buttons */}
+            <div className="flex flex-wrap gap-4 mb-12">
+              <Link href="#" className="inline-flex items-center bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors">
                 <span>Join My WhatsApp Group</span>
-              </a>
-              <a 
-                href="https://calendly.com/your-calendly-link" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center bg-primary text-white px-5 py-2.5 rounded-full hover:bg-secondary transition-colors font-medium"
-              >
-                <FaCalendarAlt className="mr-2" />
+              </Link>
+              <Link href="#" className="inline-flex items-center border border-primary text-primary px-6 py-3 rounded-full hover:bg-primary hover:text-white transition-colors">
                 <span>Book a Call</span>
-              </a>
+              </Link>
             </div>
             
-            {/* Social Proof */}
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white p-4 rounded-lg border border-linkedinBorder text-center">
-                <p className="text-2xl font-bold text-primary">13,000+</p>
-                <p className="text-gray-600 text-sm">Professionals Helped</p>
+            {/* Stats */}
+            <div className="flex flex-wrap gap-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">13,000+</div>
+                <div className="text-gray-600">Professionals Helped</div>
               </div>
-              <div className="bg-white p-4 rounded-lg border border-linkedinBorder text-center">
-                <p className="text-2xl font-bold text-primary">50+</p>
-                <p className="text-gray-600 text-sm">Companies Served</p>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-gray-600">Companies Served</div>
               </div>
             </div>
-          </motion.div>
+          </div>
           
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="relative h-[500px] w-full rounded-lg overflow-hidden border border-linkedinBorder">
-              {/* Replace with actual image of Bhavana Govil */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 z-10"></div>
-              <div className="absolute inset-0 flex items-center justify-center bg-white z-0">
-                <p className="text-gray-500">Professional Image of Bhavana Govil</p>
-              </div>
-              {/* Uncomment and use when you have the actual image */}
+          {/* Image with professional frame */}
+          <div className="flex justify-center md:justify-end">
+            <div className="relative w-[450px] h-[450px]">
+              {/* Circular frame with subtle border */}
+              <div className="absolute inset-0 rounded-full bg-white shadow-lg"></div>
+              
+              {/* Subtle brand color ring */}
+              <div className="absolute inset-0 rounded-full border-4 border-primary/10"></div>
+              
+              {/* Image */}
               <Image
-                src="/images/profileImage.jpeg"
+                src="/images/profileImage.png"
                 alt="Bhavana Govil - LinkedIn Growth Expert"
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ 
+                  objectFit: 'contain',
+                  objectPosition: 'center'
+                }}
                 priority
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
