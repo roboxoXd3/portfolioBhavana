@@ -108,7 +108,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-white border-b border-gray-100">
+      <section className="py-12  border-b border-gray-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
@@ -134,7 +134,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Our Philosophy */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -146,7 +146,7 @@ export default function CoursesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our Approach to LinkedIn Success
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto">
               We believe in tailored strategies for different professional goals. One-size-fits-all approaches don't work when it comes to LinkedIn.
             </p>
           </motion.div>
@@ -205,7 +205,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Course Categories */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -217,7 +217,7 @@ export default function CoursesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Choose Your Path to LinkedIn Success
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto">
               Select the program that's specifically designed for your professional goals and challenges.
             </p>
           </motion.div>
@@ -233,7 +233,7 @@ export default function CoursesPage() {
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 flex flex-col h-full"
+                className=" rounded-xl overflow-hidden shadow-md border border-gray-100 flex flex-col h-full"
               >
                 <div className="p-8 border-b border-gray-100">
                   <div className="mb-6">
@@ -241,7 +241,7 @@ export default function CoursesPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">{category.title}</h3>
                   <p className="text-primary font-semibold mb-4">{category.tagline}</p>
-                  <p className="text-gray-600 mb-6">{category.description}</p>
+                  <p className="mb-6">{category.description}</p>
                   <div className="space-y-2 mb-8">
                     {category.features.map((feature, i) => (
                       <div key={i} className="flex items-start">
@@ -267,7 +267,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -279,7 +279,7 @@ export default function CoursesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Success Stories from Our Community
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto">
               See what participants across our various programs have achieved with our LinkedIn strategies.
             </p>
           </motion.div>
@@ -311,9 +311,9 @@ export default function CoursesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-gray-50 p-6 rounded-lg"
+                className=" p-6 rounded-lg"
               >
-                <p className="italic text-gray-700 mb-6">
+                <p className="italic mb-6">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center">
@@ -345,7 +345,7 @@ export default function CoursesPage() {
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Book a complimentary strategy call to discuss your goals and find the perfect LinkedIn solution for your specific needs.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
+            <Button className=" text-primary hover:bg-gray-100 text-lg px-8 py-6">
               Book Your Free Strategy Call
             </Button>
           </motion.div>
@@ -353,7 +353,7 @@ export default function CoursesPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -365,7 +365,7 @@ export default function CoursesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto">
               Common questions about our LinkedIn programs.
             </p>
           </motion.div>
@@ -400,7 +400,7 @@ export default function CoursesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-sm"
+                className=" p-6 rounded-lg shadow-sm"
               >
                 <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
                 <p className="text-gray-600">{faq.answer}</p>

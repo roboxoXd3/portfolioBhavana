@@ -37,7 +37,7 @@ const Testimonials = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Real Results. Real People.</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto">
+          <p className=" text-center max-w-2xl mx-auto">
             Join over 13,000 professionals who have transformed their LinkedIn presence with my strategies.
           </p>
         </motion.div>
@@ -68,7 +68,7 @@ const Testimonials = () => {
                       />
                     </div>
                     <div>
-                      <p className="font-semibold">{testimonial.author}</p>
+                      <p className="font-semibold text-gray-700">{testimonial.author}</p>
                       <p className="text-gray-600 text-sm">{testimonial.position}</p>
                     </div>
                   </div>

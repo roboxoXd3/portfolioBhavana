@@ -48,9 +48,9 @@ const Footer = () => {
           {/* Column 1: Brand & Brief */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center mb-4">
-              <span className="text-xl font-bold text-primary">Bhavana Govil | <span className="text-accent-foreground">BrandBhava</span></span>
+              <span className="text-xl font-bold text-primary">Bhavana Govil | <span className="text-primary">BrandBhava</span></span>
             </Link>
-            <p className="text-gray-600 mb-4 max-w-md">
+            <p className=" mb-4 max-w-md">
               Helping jobseekers, freelancers, startups, and recruiters leverage LinkedIn to accelerate growth, generate leads, and achieve career breakthroughs.
             </p>
             <div className="flex space-x-4">
@@ -61,7 +61,7 @@ const Footer = () => {
                   aria-label={social.name}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary transition-colors"
+                  className=" hover:text-primary transition-colors"
                 >
                   {social.icon}
                 </a>
@@ -77,7 +77,7 @@ const Footer = () => {
                 <li key={item.title}>
                   <Link 
                     href={item.href}
-                    className="text-gray-600 hover:text-primary transition-colors"
+                    className=" hover:text-primary transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
             >
               Book a Free Consultation
             </Link>
-            <p className="text-gray-600 mt-4">
+            <p className=" mt-4">
               Have questions? Get in touch and I'll be happy to help!
             </p>
           </div>
@@ -103,14 +103,14 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 text-sm">
+          <p className=" text-sm">
             © {currentYear} Bhavana Govil. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/privacy-policy" className="text-gray-600 hover:text-primary text-sm">
+            <Link href="/privacy-policy" className=" hover:text-primary text-sm">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-600 hover:text-primary text-sm">
+            <Link href="/terms" className=" hover:text-primary text-sm">
               Terms of Service
             </Link>
           </div>

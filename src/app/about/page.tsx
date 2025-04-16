@@ -58,7 +58,7 @@ export default function AboutPage() {
               Make Your LinkedIn Profile 
               <span className="text-primary block mt-2">Top of Mind, First Choice, Only Choice</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-6">
+            <p className="text-xl md:text-2xl  mb-6">
               Helping 13,000+ professionals and 50+ companies create showstopper LinkedIn profiles that generate real opportunities.
             </p>
           </motion.div>
@@ -96,10 +96,10 @@ export default function AboutPage() {
               className="space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">My Story</h2>
-              <p className="text-gray-700">
+              <p className="">
                 As a LinkedIn enthusiast and Profile Designer, I discovered my passion for helping professionals leverage LinkedIn's full potential. What started as a simple desire to help others has grown into a mission that has impacted thousands of careers.
               </p>
-              <p className="text-gray-700">
+              <p className="">
                 With over 13,000 success stories and partnerships with 50+ companies, I've developed a deep understanding of what makes a LinkedIn profile truly stand out. My approach combines technical expertise with emotional intelligence, ensuring each profile reflects both professional excellence and authentic personal branding.
               </p>
               <div className="bg-secondary/30 p-6 rounded-lg border border-primary/10">
@@ -141,7 +141,7 @@ export default function AboutPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">How I Help You Succeed</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               From profile optimization to lead generation strategies, I provide comprehensive solutions tailored to your specific needs.
             </p>
           </motion.div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Profile Optimization</h3>
+              <h3 className="text-xl text-gray-700 font-bold mb-4">Profile Optimization</h3>
               <p className="text-gray-600">Create a LinkedIn profile that stands out and attracts your ideal opportunities with proven optimization techniques.</p>
             </div>
 
@@ -164,7 +164,7 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Content Strategy</h3>
+              <h3 className="text-xl text-gray-700  font-bold mb-4">Content Strategy</h3>
               <p className="text-gray-600">Develop engaging content that resonates with your audience and establishes your authority in your field.</p>
             </div>
 
@@ -174,7 +174,7 @@ export default function AboutPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Lead Generation</h3>
+              <h3 className="text-xl text-gray-700  font-bold mb-4">Lead Generation</h3>
               <p className="text-gray-600">Transform your LinkedIn presence into a lead-generating machine with proven engagement strategies.</p>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function AboutPage() {
           
           <div className="max-w-5xl mx-auto relative">
             {/* Center Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-primary/20"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-primary/50"></div>
             
             {timelineItems.map((item, index) => (
               <motion.div
@@ -216,7 +216,7 @@ export default function AboutPage() {
                   {/* Content Card */}
                   <div className="bg-white rounded-lg shadow-md p-6 w-full">
                     <div className="mb-4">
-                      <h3 className="text-xl font-bold">{item.period}</h3>
+                      <h3 className="text-xl text-gray-700 font-bold">{item.period}</h3>
                       <h4 className="text-lg font-semibold text-primary">{item.title}</h4>
                     </div>
                     <p className="text-gray-600">{item.description}</p>
@@ -244,7 +244,7 @@ export default function AboutPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Who I Help</h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Tailored solutions for professionals at every level
             </p>
           </motion.div>
@@ -259,15 +259,15 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold mb-6">Professionals</h3>
               <div className="space-y-6">
                 <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold mb-2">Job Seekers</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">Job Seekers</h4>
                   <p className="text-gray-600 mb-4">Struggling to get noticed by employers on LinkedIn? We'll help you stand out.</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold mb-2">Entrepreneurs</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">Entrepreneurs</h4>
                   <p className="text-gray-600 mb-4">Generate quality leads and build your brand presence on LinkedIn.</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold mb-2">Content Creators</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">Content Creators</h4>
                   <p className="text-gray-600 mb-4">Boost your content engagement and grow your following.</p>
                 </div>
               </div>
@@ -282,15 +282,15 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold mb-6">Corporate</h3>
               <div className="space-y-6">
                 <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold mb-2">Recruiters</h4>
-                  <p className="text-gray-600 mb-4">Enhance your hiring process and employer branding on LinkedIn.</p>
+                  <h4 className="font-bold text-gray-700 mb-2">Recruiters</h4>
+                  <p className="text-gray-600 mb-4">Enhance your hiring process and employer branding on LinkedIn with us.</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold mb-2">Corporate Trainers</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">Corporate Trainers</h4>
                   <p className="text-gray-600 mb-4">Develop effective training programs for LinkedIn optimization.</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold mb-2">HR Managers</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">HR Managers</h4>
                   <p className="text-gray-600 mb-4">Build a strong employer brand and improve internal recruiting.</p>
                 </div>
               </div>
@@ -318,12 +318,12 @@ export default function AboutPage() {
                 href="https://wa.me/919999999999?text=Hi%20Bhavana,%20I'm%20interested%20in%20your%20LinkedIn%20services" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="bg-[#25D366] hover:bg-[#25D366]/90 text-white px-8 py-3 rounded-md font-medium transition-all transform hover:scale-105"
+                className="bg-[#25D366] hover:bg-[#25D366]/90 text-white px-8 py-2 rounded-md font-medium transition-all transform hover:scale-105 duration-300"
               >
                 Join WhatsApp Community
               </a>
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-medium px-8 py-3">
+                <Button size="lg" className="bg-white text-primary cursor-pointer hover:bg-white/90 hover:scale-105 duration-300 font-medium px-8 py-3">
                   Book a Strategy Call
                 </Button>
               </Link>

@@ -47,19 +47,19 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-16 md:py-24">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Let's Talk About Your LinkedIn Goals</h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+        <p className="text-xl  max-w-3xl mx-auto">
           Book a 1-on-1 session to discuss your unique needs and how I can help you achieve your LinkedIn objectives.
         </p>
       </div>
 
       <div className="max-w-3xl mx-auto">
-        <Card className="bg-white shadow-lg">
+        <Card className="bg-white/20 shadow-lg">
           <CardContent className="p-8">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="name" className="text-sm font-medium ">
                       Your Name
                     </label>
                     <Input
@@ -73,7 +73,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="text-sm font-medium ">
                       Email Address
                     </label>
                     <Input
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="phone" className="text-sm font-medium ">
                       Phone Number (Optional)
                     </label>
                     <Input
@@ -104,7 +104,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-gray-700">
+                    <label htmlFor="subject" className="text-sm font-medium ">
                       Subject
                     </label>
                     <Input
@@ -120,7 +120,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                  <label htmlFor="message" className="text-sm font-medium ">
                     Your Message
                   </label>
                   <textarea
@@ -152,7 +152,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
-                <p className="text-gray-700 mb-6">
+                <p className=" mb-6">
                   Your message has been sent successfully. I'll get back to you as soon as possible to schedule our session.
                 </p>
                 <Button

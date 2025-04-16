@@ -64,7 +64,7 @@ export default function BlogPage() {
     <div className="container mx-auto px-4 py-16 md:py-24">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">LinkedIn Insights & Strategies</h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+        <p className="text-xl  max-w-3xl mx-auto">
           Practical tips and actionable advice to help you master LinkedIn and achieve your goals.
         </p>
       </div>
@@ -89,10 +89,10 @@ export default function BlogPage() {
                   <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
                     {post.category}
                   </span>
-                  <span className="text-xs text-gray-500 ml-2">{post.date}</span>
+                  <span className="text-xs  ml-2">{post.date}</span>
                 </div>
                 <h2 className="text-xl font-bold mb-2 line-clamp-2">{post.title}</h2>
-                <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>
+                <p className=" line-clamp-3">{post.excerpt}</p>
                 <div className="mt-4 text-primary font-medium text-sm flex items-center">
                   Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">

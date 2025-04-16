@@ -74,8 +74,8 @@ const EventsPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Events & Workshops</h1>
-            <p className="text-gray-600 text-lg mb-8">
+            <h1 className="text-4xl md:text-5xl  font-bold mb-6">Events & Workshops</h1>
+            <p className=" text-lg mb-8">
               Join me for interactive workshops, webinars, and speaking engagements on LinkedIn growth and personal branding.
             </p>
           </motion.div>
@@ -108,8 +108,8 @@ const EventsPage = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                  <p className="text-gray-600 mb-4">{event.description}</p>
+                  <h3 className="text-xl text-gray-700 font-bold mb-2">{event.title}</h3>
+                  <p className=" mb-4 text-gray-700">{event.description}</p>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center text-sm text-gray-500">
                       <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -189,7 +189,7 @@ const EventsPage = () => {
                 className="text-center"
               >
                 <h3 className="text-3xl md:text-4xl font-bold text-primary mb-2">{metric.value}</h3>
-                <p className="text-gray-600">{metric.label}</p>
+                <p className="">{metric.label}</p>
               </motion.div>
             ))}
           </div>

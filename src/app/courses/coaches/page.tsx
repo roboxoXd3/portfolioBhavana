@@ -59,7 +59,7 @@ export default function CoachesPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
                 Transform Your Coaching Business with LinkedIn Mastery
               </h1>
-              <p className="text-xl mb-8 text-gray-700">
+              <p className="text-xl mb-8 ">
                 Attract premium clients who value your expertise and are willing to invest in your high-ticket coaching programs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -87,7 +87,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -99,7 +99,7 @@ export default function CoachesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Are These Challenges Holding Your Coaching Business Back?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               You're not alone. Many coaches struggle with these exact same issues before optimizing their LinkedIn presence.
             </p>
           </motion.div>
@@ -130,7 +130,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Why LinkedIn Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,7 +142,7 @@ export default function CoachesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why LinkedIn is Crucial for Coaches
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               LinkedIn has become the go-to platform for professionals seeking expert guidance and coaching services.
             </p>
           </motion.div>
@@ -155,11 +155,11 @@ export default function CoachesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm"
+                className=" p-6 rounded-lg shadow-sm"
               >
                 <Linkedin className="h-8 w-8 text-primary mb-4" />
                 <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -167,7 +167,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Solution - What You'll Learn */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,7 @@ export default function CoachesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Transform Your LinkedIn Presence
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Learn how to leverage LinkedIn to attract premium clients who are ready to invest in your coaching services.
             </p>
           </motion.div>
@@ -198,7 +198,7 @@ export default function CoachesPage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Strategic Profile Optimization</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Position yourself as the go-to expert in your coaching niche with a profile that speaks directly to your ideal clients.
                   </p>
                 </div>
@@ -210,7 +210,7 @@ export default function CoachesPage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Content Strategy That Converts</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Create engaging content that establishes your authority and attracts high-ticket clients to your coaching services.
                   </p>
                 </div>
@@ -222,7 +222,7 @@ export default function CoachesPage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Outreach & Messaging Templates</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Access proven templates that help you connect with potential clients and convert conversations into coaching contracts.
                   </p>
                 </div>
@@ -234,7 +234,7 @@ export default function CoachesPage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Client Attraction System</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Implement a step-by-step system for consistently attracting premium clients through LinkedIn.
                   </p>
                 </div>
@@ -258,7 +258,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -270,7 +270,7 @@ export default function CoachesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Choose Your Path to LinkedIn Success
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Select the option that best fits your coaching business goals and budget.
             </p>
           </motion.div>
@@ -293,7 +293,7 @@ export default function CoachesPage() {
                   </CardDescription>
                   <div className="mt-4">
                     <span className="text-4xl font-bold text-primary">₹9,997</span>
-                    <span className="text-gray-500 ml-2">one-time</span>
+                    <span className=" ml-2">one-time</span>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -341,7 +341,7 @@ export default function CoachesPage() {
                   </CardDescription>
                   <div className="mt-4">
                     <span className="text-4xl font-bold text-primary">₹49,997</span>
-                    <span className="text-gray-500 ml-2">or 3 payments of ₹16,997</span>
+                    <span className=" ml-2">or 3 payments of ₹16,997</span>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -392,7 +392,7 @@ export default function CoachesPage() {
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Book a complimentary strategy call to discuss how we can help you attract premium clients and grow your coaching business with LinkedIn.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
+            <Button className=" text-primary bg-white hover:bg-gray-00 text-lg px-8 py-6">
               Book Your Free Strategy Call
             </Button>
           </motion.div>
@@ -400,7 +400,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Testimonials - Success Stories */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -412,13 +412,13 @@ export default function CoachesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Success Stories from Coaches Like You
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Here's what other coaches have achieved after implementing our LinkedIn strategies.
             </p>
           </motion.div>
 
           {/* Testimonial Cards - Add actual testimonials here */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 text-gray-700 gap-8">
             {[1, 2, 3].map((item) => (
               <motion.div
                 key={item}
@@ -432,10 +432,10 @@ export default function CoachesPage() {
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
                   <div>
                     <h3 className="font-semibold">Coach Name</h3>
-                    <p className="text-gray-500 text-sm">Business Coach</p>
+                    <p className=" text-sm">Business Coach</p>
                   </div>
                 </div>
-                <p className="italic text-gray-700">
+                <p className="italic ">
                   "After implementing Bhavana's LinkedIn strategies, I signed 3 premium clients in just 30 days. The return on investment has been incredible!"
                 </p>
               </motion.div>
@@ -445,7 +445,7 @@ export default function CoachesPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -457,7 +457,7 @@ export default function CoachesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Get answers to common questions about our LinkedIn programs for coaches.
             </p>
           </motion.div>
@@ -492,10 +492,10 @@ export default function CoachesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-sm"
+                className=" p-6 rounded-lg shadow-sm"
               >
                 <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <p className="">{faq.answer}</p>
               </motion.div>
             ))}
           </div>

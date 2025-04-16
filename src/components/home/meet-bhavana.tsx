@@ -16,7 +16,7 @@ const MeetBhavana = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Bhavana Govil</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className=" max-w-2xl mx-auto">
             Learn how I help professionals grow their presence and generate leads on LinkedIn
           </p>
         </motion.div>

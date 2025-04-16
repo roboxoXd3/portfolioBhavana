@@ -28,7 +28,7 @@ const SuccessStories = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Success Stories</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className=" max-w-2xl mx-auto">
             See how professionals and businesses have transformed their LinkedIn presence and generated quality leads.
           </p>
         </motion.div>
@@ -43,11 +43,11 @@ const SuccessStories = () => {
           >
             Trusted by Companies Like
           </motion.p>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap  justify-center gap-6">
             {companies.map((company, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-100 rounded-lg px-6 py-3"
+                className=" rounded-lg bg-card px-6 py-3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -64,7 +64,7 @@ const SuccessStories = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl shadow-lg p-8"
+              className="bg-card  rounded-xl shadow-lg p-8"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
@@ -80,10 +80,10 @@ const SuccessStories = () => {
                 </div>
                 <div>
                   <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-gray-600 text-sm">{testimonial.position}</p>
+                  <p className=" text-sm">{testimonial.position}</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">{testimonial.quote}</p>
+              <p className=" italic">{testimonial.quote}</p>
             </motion.div>
           ))}
         </div>

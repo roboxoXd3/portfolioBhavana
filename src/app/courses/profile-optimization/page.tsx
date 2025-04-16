@@ -1,33 +1,33 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { 
-  Card, 
-  CardContent, 
-  CardDescription, 
-  CardFooter, 
-  CardHeader, 
-  CardTitle 
-} from '@/components/ui/card';
-import { Check, Linkedin, Star } from 'lucide-react';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Check, Linkedin, Star } from "lucide-react";
 
 export default function ProfileOptimizationPage() {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   const staggerChildren = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const painPoints = [
@@ -35,34 +35,40 @@ export default function ProfileOptimizationPage() {
     "You're not getting noticed by recruiters or potential clients",
     "Your profile doesn't stand out in a sea of similar professionals",
     "You're not sure how to highlight your achievements effectively",
-    "Your current profile isn't generating any meaningful engagement"
+    "Your current profile isn't generating any meaningful engagement",
   ];
 
   const profileSections = [
-    { 
-      title: "Head-Turning Headline", 
-      description: "Craft a compelling headline that instantly conveys your value and makes people want to learn more about you." 
+    {
+      title: "Head-Turning Headline",
+      description:
+        "Craft a compelling headline that instantly conveys your value and makes people want to learn more about you.",
     },
-    { 
-      title: "Engaging About Section", 
-      description: "Transform your About section into a powerful personal brand story that connects with your ideal audience." 
+    {
+      title: "Engaging About Section",
+      description:
+        "Transform your About section into a powerful personal brand story that connects with your ideal audience.",
     },
-    { 
-      title: "Strategic Experience Layout", 
-      description: "Present your experience in a way that highlights achievements rather than just listing responsibilities." 
+    {
+      title: "Strategic Experience Layout",
+      description:
+        "Present your experience in a way that highlights achievements rather than just listing responsibilities.",
     },
-    { 
-      title: "Skill Optimization", 
-      description: "Strategically select and organize your skills to improve searchability and demonstrate expertise." 
+    {
+      title: "Skill Optimization",
+      description:
+        "Strategically select and organize your skills to improve searchability and demonstrate expertise.",
     },
-    { 
-      title: "Recommendation Strategy", 
-      description: "Implement a system for acquiring powerful recommendations that validate your expertise." 
+    {
+      title: "Recommendation Strategy",
+      description:
+        "Implement a system for acquiring powerful recommendations that validate your expertise.",
     },
-    { 
-      title: "Visual Enhancement", 
-      description: "Create a visually cohesive profile with optimized images and media that reinforces your brand." 
-    }
+    {
+      title: "Visual Enhancement",
+      description:
+        "Create a visually cohesive profile with optimized images and media that reinforces your brand.",
+    },
   ];
 
   return (
@@ -71,16 +77,13 @@ export default function ProfileOptimizationPage() {
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={fadeIn}
-            >
+            <motion.div initial="hidden" animate="visible" variants={fadeIn}>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
                 Create a LinkedIn Profile That Sparkles
               </h1>
               <p className="text-xl mb-8 text-gray-700">
-                Transform your LinkedIn presence from ordinary to extraordinary with expert optimization strategies that get you noticed.
+                Transform your LinkedIn presence from ordinary to extraordinary
+                with expert optimization strategies that get you noticed.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="text-lg px-8 py-6">
@@ -107,14 +110,26 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-white border-b border-gray-100">
+      <section className="py-12 border-b border-gray-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { number: "76%", text: "of professionals say a great LinkedIn profile helped them advance" },
-              { number: "122%", text: "more messages with an optimized LinkedIn profile" },
-              { number: "3X", text: "increase in profile views with strategic keywords" },
-              { number: "91%", text: "of hiring managers check LinkedIn before interviews" },
+              {
+                number: "76%",
+                text: "of professionals say a great LinkedIn profile helped them advance",
+              },
+              {
+                number: "122%",
+                text: "more messages with an optimized LinkedIn profile",
+              },
+              {
+                number: "3X",
+                text: "increase in profile views with strategic keywords",
+              },
+              {
+                number: "91%",
+                text: "of hiring managers check LinkedIn before interviews",
+              },
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -124,8 +139,10 @@ export default function ProfileOptimizationPage() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 className="text-center"
               >
-                <p className="text-4xl font-bold text-primary mb-2">{stat.number}</p>
-                <p className="text-gray-600">{stat.text}</p>
+                <p className="text-4xl font-bold text-primary mb-2">
+                  {stat.number}
+                </p>
+                <p className="">{stat.text}</p>
               </motion.div>
             ))}
           </div>
@@ -133,7 +150,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -145,8 +162,9 @@ export default function ProfileOptimizationPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Is Your LinkedIn Profile Letting You Down?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Many professionals are missing opportunities because their profiles aren't effectively showcasing their value.
+            <p className="text-xl  max-w-3xl mx-auto">
+              Many professionals are missing opportunities because their
+              profiles aren't effectively showcasing their value.
             </p>
           </motion.div>
 
@@ -164,8 +182,19 @@ export default function ProfileOptimizationPage() {
                 className="bg-secondary/10 p-6 rounded-lg flex items-start"
               >
                 <span className="text-primary mr-4 mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    />
                   </svg>
                 </span>
                 <p className="text-lg">{point}</p>
@@ -176,7 +205,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Profile Sections */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,8 +217,9 @@ export default function ProfileOptimizationPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               The 6 Essential Elements of a Standout Profile
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Each section of your LinkedIn profile plays a crucial role in creating a compelling personal brand.
+            <p className="text-xl  max-w-3xl mx-auto">
+              Each section of your LinkedIn profile plays a crucial role in
+              creating a compelling personal brand.
             </p>
           </motion.div>
 
@@ -201,15 +231,17 @@ export default function ProfileOptimizationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                className="p-6 rounded-lg shadow-sm border border-gray-100"
               >
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-                    <span className="text-primary font-semibold">{index + 1}</span>
+                    <span className="text-primary font-semibold">
+                      {index + 1}
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold">{section.title}</h3>
                 </div>
-                <p className="text-gray-600">{section.description}</p>
+                <p className="">{section.description}</p>
               </motion.div>
             ))}
           </div>
@@ -217,7 +249,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Before & After */}
-      <section className="py-16 bg-white">
+      <section className="py-16  ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -229,8 +261,9 @@ export default function ProfileOptimizationPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Witness the Transformation
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how our profile optimization strategies create dramatic improvements in visibility and engagement.
+            <p className="text-xl  max-w-3xl mx-auto">
+              See how our profile optimization strategies create dramatic
+              improvements in visibility and engagement.
             </p>
           </motion.div>
 
@@ -254,7 +287,7 @@ export default function ProfileOptimizationPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-100 p-4 rounded-lg">
+              <div className="bg-red-100 text-gray-700 p-4 rounded-lg">
                 <p className="font-medium mb-2">The Problems:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -263,11 +296,16 @@ export default function ProfileOptimizationPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-500 mr-2">•</span>
-                    <span>About section focused on responsibilities, not achievements</span>
+                    <span>
+                      About section focused on responsibilities, not
+                      achievements
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-500 mr-2">•</span>
-                    <span>Poor keyword optimization leading to low visibility</span>
+                    <span>
+                      Poor keyword optimization leading to low visibility
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-500 mr-2">•</span>
@@ -296,24 +334,35 @@ export default function ProfileOptimizationPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-green-50 p-4 rounded-lg">
+              <div className="bg-green-50 p-4 text-gray-700 rounded-lg">
                 <p className="font-medium mb-2">The Results:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    <span>Compelling headline that instantly communicates value</span>
+                    <span>
+                      Compelling headline that instantly communicates value
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    <span>Story-driven About section that engages and inspires action</span>
+                    <span>
+                      Story-driven About section that engages and inspires
+                      action
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    <span>Strategic keyword placement increasing search visibility by 300%</span>
+                    <span>
+                      Strategic keyword placement increasing search visibility
+                      by 300%
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">•</span>
-                    <span>Clear unique selling proposition that attracts ideal opportunities</span>
+                    <span>
+                      Clear unique selling proposition that attracts ideal
+                      opportunities
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -323,7 +372,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -335,7 +384,7 @@ export default function ProfileOptimizationPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Choose Your Profile Optimization Package
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Select the option that best fits your needs and career goals.
             </p>
           </motion.div>
@@ -357,7 +406,9 @@ export default function ProfileOptimizationPage() {
                     Self-guided profile optimization course
                   </CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold text-primary">₹4,997</span>
+                    <span className="text-4xl font-bold text-primary">
+                      ₹4,997
+                    </span>
                     <span className="text-gray-500 ml-2">one-time</span>
                   </div>
                 </CardHeader>
@@ -408,8 +459,12 @@ export default function ProfileOptimizationPage() {
                     Done-for-you profile optimization with personal coaching
                   </CardDescription>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold text-primary">₹24,997</span>
-                    <span className="text-gray-500 ml-2">or 2 payments of ₹12,997</span>
+                    <span className="text-4xl font-bold text-primary">
+                      ₹24,997
+                    </span>
+                    <span className="text-gray-500 ml-2">
+                      or 2 payments of ₹12,997
+                    </span>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -448,7 +503,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -460,8 +515,9 @@ export default function ProfileOptimizationPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               What Our Clients Say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from professionals who have transformed their LinkedIn presence with our help.
+            <p className="text-xl  max-w-3xl mx-auto">
+              Hear from professionals who have transformed their LinkedIn
+              presence with our help.
             </p>
           </motion.div>
 
@@ -471,20 +527,20 @@ export default function ProfileOptimizationPage() {
                 name: "Priya Sharma",
                 title: "Marketing Director",
                 rating: 5,
-                text: "My profile views increased by 450% in the first month after Bhavana's optimization. Within 6 weeks, I was approached for a dream role that I wouldn't have found otherwise."
+                text: "My profile views increased by 450% in the first month after Bhavana's optimization. Within 6 weeks, I was approached for a dream role that I wouldn't have found otherwise.",
               },
               {
                 name: "Rajiv Mehta",
                 title: "Financial Consultant",
                 rating: 5,
-                text: "The VIP transformation was worth every penny. Not only is my profile now attracting higher-quality clients, but I also understand how to maintain and leverage it for long-term success."
+                text: "The VIP transformation was worth every penny. Not only is my profile now attracting higher-quality clients, but I also understand how to maintain and leverage it for long-term success.",
               },
               {
                 name: "Ananya Patel",
                 title: "Tech Entrepreneur",
                 rating: 5,
-                text: "Bhavana's ability to capture my voice while positioning me as an authority in my space was remarkable. The investment in my profile optimization paid for itself within weeks through new partnership opportunities."
-              }
+                text: "Bhavana's ability to capture my voice while positioning me as an authority in my space was remarkable. The investment in my profile optimization paid for itself within weeks through new partnership opportunities.",
+              },
             ].map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -492,16 +548,19 @@ export default function ProfileOptimizationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-gray-50 p-6 rounded-lg"
+                className=" p-6 rounded-lg"
               >
                 <div className="flex space-x-1 mb-3">
-                  {Array(testimonial.rating).fill(0).map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
+                  {Array(testimonial.rating)
+                    .fill(0)
+                    .map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
                 </div>
-                <p className="italic text-gray-700 mb-4">
-                  "{testimonial.text}"
-                </p>
+                <p className="italic mb-4">"{testimonial.text}"</p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
                   <div>
@@ -528,13 +587,14 @@ export default function ProfileOptimizationPage() {
               Ready to Transform Your LinkedIn Profile?
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Take the first step toward a LinkedIn presence that opens doors and creates opportunities.
+              Take the first step toward a LinkedIn presence that opens doors
+              and creates opportunities.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
+              <Button className="text-primary bg-white hover:bg-gray-100 text-lg px-8 border-2 py-5">
                 Book a Profile Audit
               </Button>
-              <Button className="bg-transparent border-2 border-white hover:bg-white/10 text-lg px-8 py-6">
+              <Button className="bg-transparent border-2  border-white hover:/10 text-lg px-8 py-5">
                 View Sample Transformations
               </Button>
             </div>
@@ -543,7 +603,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -555,8 +615,9 @@ export default function ProfileOptimizationPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get answers to common questions about our LinkedIn profile optimization services.
+            <p className="text-xl  max-w-3xl mx-auto">
+              Get answers to common questions about our LinkedIn profile
+              optimization services.
             </p>
           </motion.div>
 
@@ -564,25 +625,33 @@ export default function ProfileOptimizationPage() {
           <div className="max-w-3xl mx-auto space-y-6">
             {[
               {
-                question: "How long does it take to see results from profile optimization?",
-                answer: "Most clients see a noticeable increase in profile views within the first week after optimization. More significant results, such as increased connection requests and opportunity inquiries, typically begin within 2-4 weeks."
+                question:
+                  "How long does it take to see results from profile optimization?",
+                answer:
+                  "Most clients see a noticeable increase in profile views within the first week after optimization. More significant results, such as increased connection requests and opportunity inquiries, typically begin within 2-4 weeks.",
               },
               {
-                question: "Will my profile still sound like me after optimization?",
-                answer: "Absolutely. We don't use generic templates. Instead, we work to enhance your authentic voice while applying proven strategies that increase visibility and engagement. Your unique personality and value proposition will shine through."
+                question:
+                  "Will my profile still sound like me after optimization?",
+                answer:
+                  "Absolutely. We don't use generic templates. Instead, we work to enhance your authentic voice while applying proven strategies that increase visibility and engagement. Your unique personality and value proposition will shine through.",
               },
               {
-                question: "I'm not looking for a job. Is profile optimization still valuable?",
-                answer: "Yes! LinkedIn profile optimization is valuable for all professionals, not just job seekers. It helps establish your authority in your field, attracts business opportunities, speaking engagements, partnerships, and helps you build a strong professional network."
+                question:
+                  "I'm not looking for a job. Is profile optimization still valuable?",
+                answer:
+                  "Yes! LinkedIn profile optimization is valuable for all professionals, not just job seekers. It helps establish your authority in your field, attracts business opportunities, speaking engagements, partnerships, and helps you build a strong professional network.",
               },
               {
                 question: "Can I see examples of profiles you've optimized?",
-                answer: "We respect our clients' privacy, but we do have before and after examples with permission that we can share during your consultation. We also provide detailed case studies showing the measurable results our clients have achieved."
+                answer:
+                  "We respect our clients' privacy, but we do have before and after examples with permission that we can share during your consultation. We also provide detailed case studies showing the measurable results our clients have achieved.",
               },
               {
                 question: "What happens after my profile is optimized?",
-                answer: "We don't just optimize and leave. Both packages include follow-up support to help you leverage your newly optimized profile. The VIP package includes strategic guidance on content and engagement to maximize the impact of your optimization."
-              }
+                answer:
+                  "We don't just optimize and leave. Both packages include follow-up support to help you leverage your newly optimized profile. The VIP package includes strategic guidance on content and engagement to maximize the impact of your optimization.",
+              },
             ].map((faq, index) => (
               <motion.div
                 key={index}
@@ -590,10 +659,10 @@ export default function ProfileOptimizationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-sm"
+                className="p-6 rounded-lg shadow-sm"
               >
                 <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <p className="">{faq.answer}</p>
               </motion.div>
             ))}
           </div>
@@ -601,4 +670,4 @@ export default function ProfileOptimizationPage() {
       </section>
     </div>
   );
-} 
+}

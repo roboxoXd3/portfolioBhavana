@@ -37,7 +37,7 @@ const LeadMagnet = () => {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-center">LinkedIn Profile Branding Guide</h3>
+                  <h3 className="text-xl font-bold mb-2 text-gray-700 text-center">LinkedIn Profile Branding Guide</h3>
                   <ul className="text-gray-600 space-y-2 mb-4">
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-500 mr-2">
@@ -65,7 +65,7 @@ const LeadMagnet = () => {
             {/* Right Column (Text & Form) */}
             <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Become a Brand That Sparkles!</h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg  mb-6">
                 Download my Free LinkedIn Profile Branding Guide and discover proven strategies that have helped 13,000+ professionals stand out and attract opportunities.
               </p>
               
@@ -84,7 +84,7 @@ const LeadMagnet = () => {
                   <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-medium py-6 text-lg">
                     Get Your Free Guide
                   </Button>
-                  <p className="text-sm text-gray-500 mt-2">
+                  <p className="text-sm mt-2">
                     By submitting, you agree to receive emails from Bhavana Govil. You can unsubscribe anytime.
                   </p>
                 </form>

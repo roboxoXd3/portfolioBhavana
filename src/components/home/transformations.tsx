@@ -68,8 +68,8 @@ const Transformations = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <h3 className="text-gray-700 text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-gray-700">{item.description}</p>
               </div>
             </motion.div>
           ))}

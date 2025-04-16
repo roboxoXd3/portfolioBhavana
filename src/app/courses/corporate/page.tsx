@@ -87,7 +87,7 @@ export default function CorporatePage() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -99,7 +99,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Are These Challenges Limiting Your Career Growth?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto">
               Many accomplished corporate professionals face these same obstacles to advancement and recognition.
             </p>
           </motion.div>
@@ -130,7 +130,7 @@ export default function CorporatePage() {
       </section>
 
       {/* Why LinkedIn Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,7 +142,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why LinkedIn Matters for Corporate Professionals
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               In today's competitive corporate landscape, your LinkedIn presence is more important than your resume.
             </p>
           </motion.div>
@@ -155,11 +155,11 @@ export default function CorporatePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm"
+                className=" p-6 rounded-lg shadow-sm"
               >
                 <Linkedin className="h-8 w-8 text-primary mb-4" />
                 <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -167,7 +167,7 @@ export default function CorporatePage() {
       </section>
 
       {/* Solution - What You'll Learn */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Elevate Your Professional Brand
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Learn how to strategically position yourself as a thought leader and accelerate your career growth.
             </p>
           </motion.div>
@@ -198,7 +198,7 @@ export default function CorporatePage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Executive Brand Positioning</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Position yourself as a respected expert and leader in your industry with a profile that showcases your unique value.
                   </p>
                 </div>
@@ -210,7 +210,7 @@ export default function CorporatePage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Thought Leadership Content Strategy</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Learn how to create insightful content that demonstrates your expertise and attracts attention from decision-makers.
                   </p>
                 </div>
@@ -222,7 +222,7 @@ export default function CorporatePage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Strategic Networking Approach</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Build meaningful connections with industry leaders, recruiters, and potential employers or partners.
                   </p>
                 </div>
@@ -234,7 +234,7 @@ export default function CorporatePage() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Visibility Amplification Framework</h3>
-                  <p className="text-gray-600">
+                  <p className="">
                     Discover proven techniques to increase your visibility both within your organization and across your industry.
                   </p>
                 </div>
@@ -258,7 +258,7 @@ export default function CorporatePage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -270,7 +270,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Choose Your Career Advancement Path
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Select the option that best fits your professional goals and development needs.
             </p>
           </motion.div>
@@ -394,7 +394,7 @@ export default function CorporatePage() {
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Book a complimentary strategy call to discuss how we can help you elevate your corporate brand and advance your career.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
+            <Button className=" text-primary bg-white cursor-pointer hover:bg-gray-300 text-lg px-8 py-6">
               Book Your Free Strategy Call
             </Button>
           </motion.div>
@@ -402,7 +402,7 @@ export default function CorporatePage() {
       </section>
 
       {/* Testimonials - Success Stories */}
-      <section className="py-16 bg-white">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -414,7 +414,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Success Stories from Corporate Professionals
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               See how other professionals have accelerated their careers with our LinkedIn strategies.
             </p>
           </motion.div>
@@ -428,7 +428,7 @@ export default function CorporatePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: item * 0.1, duration: 0.6 }}
-                className="bg-gray-50 p-6 rounded-lg"
+                className=" p-6 rounded-lg"
               >
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
@@ -437,7 +437,7 @@ export default function CorporatePage() {
                     <p className="text-gray-500 text-sm">Director, Multinational Company</p>
                   </div>
                 </div>
-                <p className="italic text-gray-700">
+                <p className="italic ">
                   "After implementing Bhavana's LinkedIn strategies, I was approached for speaking opportunities and even received two job offers from industry leaders. My visibility has increased dramatically!"
                 </p>
               </motion.div>
@@ -447,7 +447,7 @@ export default function CorporatePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -459,7 +459,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Common questions about our LinkedIn programs for corporate professionals.
             </p>
           </motion.div>
@@ -494,10 +494,10 @@ export default function CorporatePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-sm"
+                className=" p-6 rounded-lg shadow-sm"
               >
                 <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <p className="">{faq.answer}</p>
               </motion.div>
             ))}
           </div>
