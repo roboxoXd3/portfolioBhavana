@@ -53,7 +53,7 @@ export default function ContactPage() {
       </div>
 
       <div className="max-w-3xl mx-auto">
-        <Card className="bg-white/20 shadow-lg">
+        <Card className="bg-white/0 shadow-lg">
           <CardContent className="p-8">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
