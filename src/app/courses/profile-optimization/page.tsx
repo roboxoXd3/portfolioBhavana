@@ -74,7 +74,7 @@ export default function ProfileOptimizationPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-16 border-b md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div initial="hidden" animate="visible" variants={fadeIn}>
@@ -110,7 +110,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 border-b border-gray-100">
+      <section className="py-12 border-b ">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
@@ -137,7 +137,7 @@ export default function ProfileOptimizationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="text-center"
+                className="text-center bg-card py-2 rounded-md px-4"
               >
                 <p className="text-4xl font-bold text-primary mb-2">
                   {stat.number}
@@ -150,7 +150,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-16">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,7 @@ export default function ProfileOptimizationPage() {
               <motion.li
                 key={index}
                 variants={fadeIn}
-                className="bg-secondary/10 p-6 rounded-lg flex items-start"
+                className="bg-card border p-6 rounded-lg flex items-start"
               >
                 <span className="text-primary mr-4 mt-1">
                   <svg
@@ -205,7 +205,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Profile Sections */}
-      <section className="py-16 ">
+      <section className="py-16 border-b ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -249,7 +249,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Before & After */}
-      <section className="py-16  ">
+      <section className="py-16 border-b ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -278,7 +278,7 @@ export default function ProfileOptimizationPage() {
               <div className="bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
                 <div className="bg-gray-200 px-4 py-2 flex items-center">
                   <span className="text-red-500 mr-2">✕</span>
-                  <p className="font-medium">BEFORE</p>
+                  <p className="font-medium text-gray-700">BEFORE</p>
                 </div>
                 <div className="p-6">
                   {/* Replace with actual before profile example */}
@@ -325,7 +325,7 @@ export default function ProfileOptimizationPage() {
               <div className="bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
                 <div className="bg-green-100 px-4 py-2 flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  <p className="font-medium">AFTER</p>
+                  <p className="font-medium text-gray-700">AFTER</p>
                 </div>
                 <div className="p-6">
                   {/* Replace with actual after profile example */}
@@ -372,7 +372,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 ">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -503,7 +503,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 ">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -548,7 +548,7 @@ export default function ProfileOptimizationPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className=" p-6 rounded-lg"
+                className=" p-6 rounded-lg bg-card border"
               >
                 <div className="flex space-x-1 mb-3">
                   {Array(testimonial.rating)

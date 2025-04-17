@@ -24,7 +24,7 @@ const LeadMagnet = () => {
             {/* Left Column (Image) */}
             <div className="flex justify-center md:justify-end order-2 md:order-1">
               <div className="relative w-full max-w-md aspect-[3/4]">
-                <div className="bg-white rounded-lg shadow-lg p-6 relative z-10 border border-gray-200">
+                <div className="bg-card border rounded-lg shadow-lg p-6 relative z-10">
                   <div className="relative w-full aspect-square mb-4">
                     <div className="absolute top-0 left-0 w-full h-full bg-accent/20 rounded-lg flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -37,8 +37,8 @@ const LeadMagnet = () => {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-700 text-center">LinkedIn Profile Branding Guide</h3>
-                  <ul className="text-gray-600 space-y-2 mb-4">
+                  <h3 className="text-xl font-bold mb-2 text-center">LinkedIn Profile Branding Guide</h3>
+                  <ul className=" space-y-2 mb-4">
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-500 mr-2">
                         <polyline points="20 6 9 17 4 12"></polyline>

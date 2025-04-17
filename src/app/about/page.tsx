@@ -46,7 +46,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-20 md:py-28 overflow-hidden">
+      <section className="bg-gradient-to-r from-primary/10 border-b to-accent/10 py-20 md:py-28 overflow-hidden">
         <div className="container mx-auto px-4">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -66,7 +66,7 @@ export default function AboutPage() {
       </section>
 
       {/* Journey Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 border-b">
         <div className="container mx-auto px-4">
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
@@ -131,7 +131,7 @@ export default function AboutPage() {
       </section>
 
       {/* Services & Expertise */}
-      <section className="py-16 bg-gradient-to-br from-accent/5 to-primary/5">
+      <section className="py-16 bg-gradient-to-br border-b  from-accent/5 to-primary/5">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -148,41 +148,41 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service Cards */}
-            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+            <div className="bg-card border rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl text-gray-700 font-bold mb-4">Profile Optimization</h3>
-              <p className="text-gray-600">Create a LinkedIn profile that stands out and attracts your ideal opportunities with proven optimization techniques.</p>
+              <h3 className="text-xl  font-bold mb-4">Profile Optimization</h3>
+              <p className="">Create a LinkedIn profile that stands out and attracts your ideal opportunities with proven optimization techniques.</p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+            <div className="bg-card border rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2" />
                 </svg>
               </div>
-              <h3 className="text-xl text-gray-700  font-bold mb-4">Content Strategy</h3>
-              <p className="text-gray-600">Develop engaging content that resonates with your audience and establishes your authority in your field.</p>
+              <h3 className="text-xl   font-bold mb-4">Content Strategy</h3>
+              <p className="">Develop engaging content that resonates with your audience and establishes your authority in your field.</p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
+            <div className="bg-card border rounded-xl p-8 shadow-md hover:shadow-lg transition-all">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl text-gray-700  font-bold mb-4">Lead Generation</h3>
-              <p className="text-gray-600">Transform your LinkedIn presence into a lead-generating machine with proven engagement strategies.</p>
+              <h3 className="text-xl   font-bold mb-4">Lead Generation</h3>
+              <p className="">Transform your LinkedIn presence into a lead-generating machine with proven engagement strategies.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Journey Timeline Section */}
-      <section className="py-16 md:py-24 bg-secondary/10">
+      <section className="py-16 md:py-24 bg-secondary/10 border-b">
         <div className="container mx-auto px-4">
           <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-16 text-center"
@@ -214,12 +214,12 @@ export default function AboutPage() {
                   } items-center w-full max-w-[calc(50%-20px)]`}
                 >
                   {/* Content Card */}
-                  <div className="bg-white rounded-lg shadow-md p-6 w-full">
+                  <div className="bg-card border rounded-lg shadow-md p-6 w-full">
                     <div className="mb-4">
-                      <h3 className="text-xl text-gray-700 font-bold">{item.period}</h3>
+                      <h3 className="text-xl  font-bold">{item.period}</h3>
                       <h4 className="text-lg font-semibold text-primary">{item.title}</h4>
                     </div>
-                    <p className="text-gray-600">{item.description}</p>
+                    <p className="">{item.description}</p>
                   </div>
 
                   {/* Timeline Dot */}
@@ -234,7 +234,7 @@ export default function AboutPage() {
       </section>
 
       {/* Target Audience Section */}
-      <section className="py-16 bg-secondary/20">
+      <section className="py-16 bg-secondary/20 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -258,17 +258,17 @@ export default function AboutPage() {
             >
               <h3 className="text-2xl font-bold mb-6">Professionals</h3>
               <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold text-gray-700 mb-2">Job Seekers</h4>
-                  <p className="text-gray-600 mb-4">Struggling to get noticed by employers on LinkedIn? We'll help you stand out.</p>
+                <div className="bg-card border rounded-xl p-6 shadow-md">
+                  <h4 className="font-bold  mb-2">Job Seekers</h4>
+                  <p className=" mb-4">Struggling to get noticed by employers on LinkedIn? We'll help you stand out.</p>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold text-gray-700 mb-2">Entrepreneurs</h4>
-                  <p className="text-gray-600 mb-4">Generate quality leads and build your brand presence on LinkedIn.</p>
+                <div className="bg-card border rounded-xl p-6 shadow-md">
+                  <h4 className="font-bold  mb-2">Entrepreneurs</h4>
+                  <p className=" mb-4">Generate quality leads and build your brand presence on LinkedIn.</p>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold text-gray-700 mb-2">Content Creators</h4>
-                  <p className="text-gray-600 mb-4">Boost your content engagement and grow your following.</p>
+                <div className="bg-card border rounded-xl p-6 shadow-md">
+                  <h4 className="font-bold  mb-2">Content Creators</h4>
+                  <p className=" mb-4">Boost your content engagement and grow your following.</p>
                 </div>
               </div>
             </motion.div>
@@ -281,17 +281,17 @@ export default function AboutPage() {
             >
               <h3 className="text-2xl font-bold mb-6">Corporate</h3>
               <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold text-gray-700 mb-2">Recruiters</h4>
-                  <p className="text-gray-600 mb-4">Enhance your hiring process and employer branding on LinkedIn with us.</p>
+                <div className="bg-card border rounded-xl p-6 shadow-md">
+                  <h4 className="font-bold  mb-2">Recruiters</h4>
+                  <p className=" mb-4">Enhance your hiring process and employer branding on LinkedIn with us.</p>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold text-gray-700 mb-2">Corporate Trainers</h4>
-                  <p className="text-gray-600 mb-4">Develop effective training programs for LinkedIn optimization.</p>
+                <div className="bg-card border rounded-xl p-6 shadow-md">
+                  <h4 className="font-bold  mb-2">Corporate Trainers</h4>
+                  <p className=" mb-4">Develop effective training programs for LinkedIn optimization.</p>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4 className="font-bold text-gray-700 mb-2">HR Managers</h4>
-                  <p className="text-gray-600 mb-4">Build a strong employer brand and improve internal recruiting.</p>
+                <div className="bg-card border rounded-xl p-6 shadow-md">
+                  <h4 className="font-bold  mb-2">HR Managers</h4>
+                  <p className=" mb-4">Build a strong employer brand and improve internal recruiting.</p>
                 </div>
               </div>
             </motion.div>
@@ -300,7 +300,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-primary text-white ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -323,7 +323,7 @@ export default function AboutPage() {
                 Join WhatsApp Community
               </a>
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-primary cursor-pointer hover:bg-white/90 hover:scale-105 duration-300 font-medium px-8 py-3">
+                <Button size="lg" className="bg-white border text-primary cursor-pointer hover:bg-white/90 hover:scale-105 duration-300 font-medium px-8 py-3">
                   Book a Strategy Call
                 </Button>
               </Link>

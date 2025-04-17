@@ -27,7 +27,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-secondary">
+    <section className="py-16 md:py-24 border-b bg-secondary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,15 +51,15 @@ const Testimonials = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="bg-white shadow-md hover:shadow-lg transition-shadow h-full">
+              <Card className="bg-card border shadow-md hover:shadow-lg transition-shadow h-full">
                 <CardContent className="pt-6 pb-6 flex flex-col h-full">
                   <div className="flex items-center mb-6">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4">
+                    <div className="relative w-16 h-16 border rounded-full overflow-hidden mr-4">
                       <Image
                         src={testimonial.image}
                         alt={testimonial.author}
                         fill
-                        className="object-cover"
+                        className="object-cover bg-gray-300"
                         onError={(e) => {
                           // Fallback if image fails to load
                           const target = e.target as HTMLImageElement;
@@ -68,8 +68,8 @@ const Testimonials = () => {
                       />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-700">{testimonial.author}</p>
-                      <p className="text-gray-600 text-sm">{testimonial.position}</p>
+                      <p className="font-semibold ">{testimonial.author}</p>
+                      <p className=" text-sm">{testimonial.position}</p>
                     </div>
                   </div>
                   <div className="flex-grow">
@@ -86,7 +86,7 @@ const Testimonials = () => {
                         <path d="M6.1 12.55A2.15 2.15 0 0 1 3.97 10.4a2.15 2.15 0 1 1 4.31 0 2.15 2.15 0 0 1-2.15 2.15h-.02zm0-7.15a2.15 2.15 0 0 1-2.15-2.15 2.15 2.15 0 1 1 4.31 0 2.15 2.15 0 0 1-2.15 2.15h-.02zm0 14.3A2.15 2.15 0 0 1 3.97 17.6a2.15 2.15 0 1 1 4.31 0 2.15 2.15 0 0 1-2.15 2.15l-.02-.05z"></path>
                       </svg>
                     </div>
-                    <p className="text-gray-700 text-lg italic font-medium">"{testimonial.quote}"</p>
+                    <p className=" text-lg italic font-medium">"{testimonial.quote}"</p>
                   </div>
                 </CardContent>
               </Card>
@@ -101,7 +101,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-12 text-center"
         >
-          <div className="inline-flex items-center bg-white rounded-full p-1 pr-4 shadow-md">
+          <div className="inline-flex items-center bg-card border rounded-full p-1 pr-4 shadow-md">
             <div className="relative h-12 w-12 rounded-full overflow-hidden mr-3">
               <Image 
                 src="/images/bhavana-profile.jpg" 
@@ -110,7 +110,7 @@ const Testimonials = () => {
                 className="object-cover"
               />
             </div>
-            <span className="text-gray-700 font-medium">Trusted by professionals from 30+ countries</span>
+            <span className=" font-medium">Trusted by professionals from 30+ countries</span>
           </div>
         </motion.div>
       </div>

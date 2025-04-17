@@ -48,7 +48,7 @@ export default function ConsultantsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-16 border-b md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -87,7 +87,7 @@ export default function ConsultantsPage() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-16 ">
+      <section className="py-16 border-b ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export default function ConsultantsPage() {
               <motion.li
                 key={index}
                 variants={fadeIn}
-                className="bg-secondary/10 p-6 rounded-lg flex items-start"
+                className="bg-card border p-6 rounded-lg flex items-start"
               >
                 <span className="text-primary mr-4 mt-1">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -130,7 +130,7 @@ export default function ConsultantsPage() {
       </section>
 
       {/* Why LinkedIn Section */}
-      <section className="py-16 ">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -155,7 +155,7 @@ export default function ConsultantsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className=" p-6 rounded-lg shadow-sm"
+                className=" p-6 rounded-lg bg-card shadow-sm"
               >
                 <Linkedin className="h-8 w-8 text-primary mb-4" />
                 <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
@@ -167,7 +167,7 @@ export default function ConsultantsPage() {
       </section>
 
       {/* Solution - What You'll Learn */}
-      <section className="py-16 ">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -258,7 +258,7 @@ export default function ConsultantsPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 ">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -403,7 +403,7 @@ export default function ConsultantsPage() {
       </section>
 
       {/* Testimonials - Success Stories */}
-      <section className="py-16 ">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -429,7 +429,7 @@ export default function ConsultantsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: item * 0.1, duration: 0.6 }}
-                className=" p-6 rounded-lg"
+                className=" p-6 rounded-lg bg-card border"
               >
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>

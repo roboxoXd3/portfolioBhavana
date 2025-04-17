@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const MeetBhavana = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 border-b">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-12"
@@ -46,7 +46,7 @@ const MeetBhavana = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full flex flex-col">
+            <div className="bg-card border rounded-xl shadow-lg overflow-hidden h-full flex flex-col">
               <div className="aspect-video relative bg-gray-100 flex items-center justify-center">
                 {/* Replace with actual video component when available */}
                 <div className="flex flex-col items-center justify-center">
@@ -64,7 +64,7 @@ const MeetBhavana = () => {
               
               <div className="p-8 flex-grow flex flex-col justify-between">
                 <div>
-                  <blockquote className="text-gray-700 text-lg italic">
+                  <blockquote className=" text-lg italic">
                     "I'm passionate about helping professionals leverage LinkedIn to its full potential. Through strategic personal branding and proven lead generation techniques, I've helped thousands of individuals and companies transform their LinkedIn presence."
                   </blockquote>
                   <p className="text-right mt-4 font-semibold">- Bhavana Govil</p>

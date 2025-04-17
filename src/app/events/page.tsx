@@ -64,9 +64,9 @@ const EventsPage = () => {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen ">
       {/* Hero Section */}
-      <section className="bg-secondary/20 py-16">
+      <section className="bg-secondary/20 py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ const EventsPage = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0 }}
@@ -100,30 +100,30 @@ const EventsPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-card rounded-lg shadow-md overflow-hidden"
               >
                 <div className="relative h-48 bg-gray-200">
                   <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-500">Event Image</span>
+                    <span className="text-gray-400">Event Image</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl text-gray-700 font-bold mb-2">{event.title}</h3>
-                  <p className=" mb-4 text-gray-700">{event.description}</p>
+                  <h3 className="text-xl  font-bold mb-2">{event.title}</h3>
+                  <p className=" mb-4 ">{event.description}</p>
                   <div className="space-y-2 mb-6">
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-gray-400">
                       <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       {event.date}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-gray-400">
                       <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       {event.time}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-gray-400">
                       <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -140,7 +140,7 @@ const EventsPage = () => {
       </section>
 
       {/* Past Events */}
-      <section className="py-16 bg-secondary/10">
+      <section className="py-16 bg-secondary/10 border-b">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0 }}
@@ -161,11 +161,11 @@ const EventsPage = () => {
               >
                 <div className="relative h-48 rounded-lg overflow-hidden bg-gray-200">
                   <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-500">Past Event Image</span>
+                    <span className="text-gray-400">Past Event Image</span>
                   </div>
                   <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="text-center text-white p-4">
-                      <h3 className="font-bold">{event.title}</h3>
+                      <h3 className="font-bold ">{event.title}</h3>
                       <p className="text-sm">{event.location}</p>
                     </div>
                   </div>
@@ -177,7 +177,7 @@ const EventsPage = () => {
       </section>
 
       {/* Metrics Section */}
-      <section className="py-16">
+      <section className="py-16 border-b">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {metrics.map((metric, index) => (
@@ -208,7 +208,7 @@ const EventsPage = () => {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-primary hover:bg-white/90"
+              className="bg-white text-primary cursor-pointer hover:bg-white/90"
             >
               Contact Me
             </Button>

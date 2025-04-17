@@ -26,7 +26,7 @@ const Transformations = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-accent/5">
+    <section className="py-16 md:py-24 border-b bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-16"
@@ -41,7 +41,7 @@ const Transformations = () => {
           {transformations.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden"
+              className="bg-card border rounded-xl shadow-lg overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
@@ -67,9 +67,9 @@ const Transformations = () => {
                   </div>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-gray-700 text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-gray-700">{item.description}</p>
+              <div className="p-6 bg-black/10">
+                <h3 className=" text-xl font-bold mb-2">{item.title}</h3>
+                <p className="">{item.description}</p>
               </div>
             </motion.div>
           ))}
