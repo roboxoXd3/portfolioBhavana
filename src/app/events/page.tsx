@@ -66,7 +66,7 @@ const EventsPage = () => {
   return (
     <main className="min-h-screen ">
       {/* Hero Section */}
-      <section className="bg-secondary/20 py-16 border-b">
+      <section className="dark:bg-gradient-to-b from-destructive to-transparent py-16 border-b">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,7 +197,7 @@ const EventsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-white text-center">
+      <section className="py-16 bg-destructive text-white text-center">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -208,7 +208,7 @@ const EventsPage = () => {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-primary cursor-pointer hover:bg-white/90"
+              className="bg-accent text-primary cursor-pointer hover:bg-accent/90"
             >
               Contact Me
             </Button>

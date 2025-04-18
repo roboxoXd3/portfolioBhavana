@@ -44,7 +44,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16 md:py-24">
+    <div className="container mx-auto px-4 py-16 md:py-24 ">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Let's Talk About Your LinkedIn Goals</h1>
         <p className="text-xl  max-w-3xl mx-auto">
@@ -131,14 +131,14 @@ export default function ContactPage() {
                     placeholder="Tell me about your LinkedIn goals and how I can help..."
                     required
                     rows={5}
-                    className="w-full min-h-[120px] px-3 py-2 text-base border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full min-h-[120px] px-3 py-2 text-base border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-6 text-lg"
+                  className="w-full bg-accent hover:bg-accent/90 text-white font-medium py-6 text-lg"
                 >
                   {isSubmitting ? "Sending..." : "Book Your Session"}
                 </Button>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                 </p>
                 <Button
                   onClick={() => setIsSubmitted(false)}
-                  className="bg-primary hover:bg-primary/90 text-white"
+                  className="bg-accent hover:bg-accent/90 text-white"
                 >
                   Send Another Message
                 </Button>

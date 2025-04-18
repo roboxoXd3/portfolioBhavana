@@ -74,14 +74,14 @@ export default function ProfileOptimizationPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 border-b md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-16 border-b md:py-24 dark:bg-gradient-to-b from-destructive to-transparent">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div initial="hidden" animate="visible" variants={fadeIn}>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
                 Create a LinkedIn Profile That Sparkles
               </h1>
-              <p className="text-xl mb-8 text-gray-700">
+              <p className="text-xl mb-8 ">
                 Transform your LinkedIn presence from ordinary to extraordinary
                 with expert optimization strategies that get you noticed.
               </p>
@@ -278,7 +278,7 @@ export default function ProfileOptimizationPage() {
               <div className="bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
                 <div className="bg-gray-200 px-4 py-2 flex items-center">
                   <span className="text-red-500 mr-2">✕</span>
-                  <p className="font-medium text-gray-700">BEFORE</p>
+                  <p className="font-medium ">BEFORE</p>
                 </div>
                 <div className="p-6">
                   {/* Replace with actual before profile example */}
@@ -287,7 +287,7 @@ export default function ProfileOptimizationPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-red-100 text-gray-700 p-4 rounded-lg">
+              <div className="bg-red-100  p-4 rounded-lg">
                 <p className="font-medium mb-2">The Problems:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -325,7 +325,7 @@ export default function ProfileOptimizationPage() {
               <div className="bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
                 <div className="bg-green-100 px-4 py-2 flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
-                  <p className="font-medium text-gray-700">AFTER</p>
+                  <p className="font-medium ">AFTER</p>
                 </div>
                 <div className="p-6">
                   {/* Replace with actual after profile example */}
@@ -334,7 +334,7 @@ export default function ProfileOptimizationPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-green-50 p-4 text-gray-700 rounded-lg">
+              <div className="bg-green-50 p-4  rounded-lg">
                 <p className="font-medium mb-2">The Results:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -447,7 +447,7 @@ export default function ProfileOptimizationPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <Card className="h-full border-2 border-primary shadow-lg relative before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-primary">
+              <Card className="h-full border-2 border-primary shadow-lg relative ">
                 <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-primary text-white px-3 py-1 text-sm font-medium rounded">
                   Most Popular
                 </div>
@@ -575,7 +575,7 @@ export default function ProfileOptimizationPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-destructive text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -591,10 +591,10 @@ export default function ProfileOptimizationPage() {
               and creates opportunities.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="text-primary bg-white hover:bg-gray-100 text-lg px-8 border-2 py-5">
+              <Button className="text-primary bg-accent border-2 border-accent hover:bg-accent/80 text-lg px-8 py-5">
                 Book a Profile Audit
               </Button>
-              <Button className="bg-transparent border-2  border-white hover:/10 text-lg px-8 py-5">
+              <Button className="bg-transparent border-2 border-accent hover:bg-accent text-lg px-8 py-5">
                 View Sample Transformations
               </Button>
             </div>

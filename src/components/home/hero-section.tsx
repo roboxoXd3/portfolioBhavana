@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="bg-light-blue py-20 border-b md:py-28 overflow-hidden relative">
+    <section className=" dark:bg-gradient-to-b from-destructive to-transparent py-20 border-b md:py-28 overflow-hidden relative">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column (Text) */}

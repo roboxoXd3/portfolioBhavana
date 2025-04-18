@@ -46,7 +46,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary/10 border-b to-accent/10 py-20 md:py-28 overflow-hidden">
+      <section className="dark:bg-gradient-to-b from-destructive to-transparent py-20 md:py-28 overflow-hidden">
         <div className="container mx-auto px-4">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -66,7 +66,7 @@ export default function AboutPage() {
       </section>
 
       {/* Journey Section */}
-      <section className="py-16 md:py-24 border-b">
+      <section className="py-16 md:py-24  border-b">
         <div className="container mx-auto px-4">
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
@@ -300,7 +300,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-white ">
+      <section className="py-16 bg-destructive text-white ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -323,7 +323,7 @@ export default function AboutPage() {
                 Join WhatsApp Community
               </a>
               <Link href="/contact">
-                <Button size="lg" className="bg-white border text-primary cursor-pointer hover:bg-white/90 hover:scale-105 duration-300 font-medium px-8 py-3">
+                <Button size="lg" className=" border text-primary cursor-pointer bg-accent hover:bg-white/90 hover:scale-105 duration-300 font-medium px-8 py-3">
                   Book a Strategy Call
                 </Button>
               </Link>

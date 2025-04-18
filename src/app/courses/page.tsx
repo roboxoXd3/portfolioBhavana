@@ -80,7 +80,7 @@ export default function CoursesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-16 md:py-24 dark:bg-gradient-to-b from-destructive to-transparent">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -91,7 +91,7 @@ export default function CoursesPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
                 LinkedIn Mastery for Every Professional
               </h1>
-              <p className="text-xl mb-8 text-gray-700">
+              <p className="text-xl mb-8 ">
                 Discover specialized LinkedIn programs designed to help you achieve your specific professional goals, whether you're a coach, corporate professional, consultant, or simply looking to optimize your presence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -126,7 +126,7 @@ export default function CoursesPage() {
                 className="text-center"
               >
                 <p className="text-4xl font-bold text-primary mb-2">{stat.number}</p>
-                <p className="text-gray-600">{stat.text}</p>
+                <p className="">{stat.text}</p>
               </motion.div>
             ))}
           </div>
@@ -174,28 +174,28 @@ export default function CoursesPage() {
             >
               <div>
                 <h3 className="text-2xl font-bold mb-3">Specialized Expertise</h3>
-                <p className="text-gray-600">
+                <p className="">
                   Rather than generic advice, our programs are specialized for specific professional categories, addressing the unique challenges and opportunities of each.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-2xl font-bold mb-3">Results-Focused Methodology</h3>
-                <p className="text-gray-600">
+                <p className="">
                   Our strategies focus on tangible outcomes: more clients for coaches, career advancement for corporate professionals, quality leads for consultants, and increased visibility for everyone.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-2xl font-bold mb-3">Proven Systems</h3>
-                <p className="text-gray-600">
+                <p className="">
                   Each program is built on systems and frameworks that have been tested and refined with hundreds of clients, ensuring predictable results when implemented correctly.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-2xl font-bold mb-3">Ongoing Support</h3>
-                <p className="text-gray-600">
+                <p className="">
                   We don't just teach and leave. Our programs include ongoing support and community to help you implement effectively and adapt to LinkedIn's evolving landscape.
                 </p>
               </div>
@@ -331,7 +331,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-destructive text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -345,7 +345,7 @@ export default function CoursesPage() {
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Book a complimentary strategy call to discuss your goals and find the perfect LinkedIn solution for your specific needs.
             </p>
-            <Button className=" text-primary hover:bg-gray-100 text-lg px-8 py-6">
+            <Button className=" text-primary bg-accent hover:bg-accent/80 text-lg px-8 py-6">
               Book Your Free Strategy Call
             </Button>
           </motion.div>
@@ -403,7 +403,7 @@ export default function CoursesPage() {
                 className=" p-6 rounded-lg shadow-sm"
               >
                 <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <p className="">{faq.answer}</p>
               </motion.div>
             ))}
           </div>

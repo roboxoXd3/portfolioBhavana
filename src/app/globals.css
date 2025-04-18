@@ -48,13 +48,17 @@
 :root {
   --radius: 0.625rem;
   --text-default: #374151;
+  --destructive: #de0f3f;
+  --whatsapp:#31ee50;
+
 
   /* Brand Colors */
-  --red-brand: #de0f3f;
+  --red-brand: #9b0427;
   --blue-brand: #004aad;
   --light-blue-brand: #ebf2fa;
   --yellow-brand: #ffcc00;
   --white: #ffffff;
+
 
   /* System Colors */
   --background: var(--white);

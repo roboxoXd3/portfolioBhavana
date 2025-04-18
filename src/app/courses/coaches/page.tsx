@@ -48,7 +48,7 @@ export default function CoachesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 border-b md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
+      <section className="py-16 border-b md:py-24 dark:bg-gradient-to-b from-destructive to-transparent">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -78,7 +78,7 @@ export default function CoachesPage() {
               className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden"
             >
               {/* Replace with actual image */}
-              <div className="absolute inset-0 bg-primary/20 flex items-center justify-center text-primary text-lg font-medium">
+              <div className="absolute inset-0 bg-primary/10 flex items-center justify-center text-primary text-lg font-medium">
                 Professional image of coaches succeeding with LinkedIn
               </div>
             </motion.div>
@@ -328,7 +328,7 @@ export default function CoachesPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <Card className="h-full border-2 border-primary shadow-lg relative before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-primary">
+              <Card className="h-full border-2 border-primary shadow-lg relative ">
                 <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-primary text-white px-3 py-1 text-sm font-medium rounded">
                   Most Popular
                 </div>
@@ -378,7 +378,7 @@ export default function CoachesPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-destructive text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -392,7 +392,7 @@ export default function CoachesPage() {
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Book a complimentary strategy call to discuss how we can help you attract premium clients and grow your coaching business with LinkedIn.
             </p>
-            <Button className=" text-primary bg-white hover:bg-gray-00 text-lg px-8 py-6">
+            <Button className=" text-primary bg-accent hover:bg-accent/80 text-lg px-8 py-6">
               Book Your Free Strategy Call
             </Button>
           </motion.div>

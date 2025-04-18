@@ -146,7 +146,7 @@ const Header = () => {
   ];
 
   const whatsappLink =
-    "https://wa.me/919999999999?text=Hi%20Bhavana,%20I'm%20interested%20in%20your%20LinkedIn%20services";
+    "https://wa.me/918279714778?text=Hi%20Bhavana,%20I'm%20interested%20in%20your%20LinkedIn%20services";
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background text-foreground backdrop-blur-sm border-b border-border shadow-sm transition-colors">

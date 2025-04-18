@@ -48,7 +48,7 @@ const Footer = () => {
           {/* Column 1: Brand & Brief */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center mb-4">
-              <span className="text-xl font-bold text-primary">Bhavana Govil | <span className="text-primary">BrandBhava</span></span>
+              <span className="text-xl font-bold text-primary">Bhavana Govil | <span className="text-accent">BrandBhava</span></span>
             </Link>
             <p className=" mb-4 max-w-md">
               Helping jobseekers, freelancers, startups, and recruiters leverage LinkedIn to accelerate growth, generate leads, and achieve career breakthroughs.
